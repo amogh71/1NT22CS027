@@ -1,0 +1,95 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffca28, #ff7043, #4caf50, #1976d2); /* Vibrant Indian color palette */
+  background-size: 400% 400%;
+  animation: vibrantGradient 10s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333; /* Dark text for contrast */
+}
+
+@keyframes vibrantGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for content */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+
+.App-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 80px; /* Make the logo a bit more prominent */
+  pointer-events: none;
+  animation: pulse 2s infinite alternate; /* Subtle pulse animation */
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.App-logo-spin {
+    animation: logoSpin 20s linear infinite;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #e65100; /* A bright, warm color */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #fdd835; /* Subtle text shadow for depth */
+}
+
+p {
+  font-size: 1.2em;
+  color: #1976d2; /* Another vibrant color */
+  margin-bottom: 15px;
+}
+
+.App-link {
+  color: #00b0ff; /* A bright link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #f57c00;
+}
